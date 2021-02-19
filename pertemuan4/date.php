@@ -1,4 +1,13 @@
 <?php
+/*
+Muhammad Fazril
+203040068
+https://github.com/Fazril235/pw2021_203040068
+Pertemuan 4 - 19 Februari 2021
+Memppelajari penerapan function pada bahasa pemrograman php
+*/
+?>
+<?php
 // Date 
 // Untuk menampilkan tanggal dengan format tertentu
 // echo date("l, d-M-Y");
@@ -20,4 +29,3 @@ echo date("l", strtotime("1 feb 2002"));
 
  
 ?>
- 
