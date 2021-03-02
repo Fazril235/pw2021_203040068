@@ -17,13 +17,23 @@ Struktur Kontrol
 </head>
 <body>
     <table border="1" cellspacing="0" cellpadding="10">
-        <tr>
-            <th></th>    
-            <?php for ($i = 1; $i <=5; $i++) : ?>
-                <th>Kolom <?= $i; ?></th>
-            <?php endfor; ?>
-        </tr>
-                <!-- Tambahkan baris kode php untuk menampilkan bagian body table -->
+           <!-- Tambahkan baris kode php untuk menampilkan bagian body table -->
+       <tr>
+        <th>Kolom 1</th>
+        <th>Kolom 2</th>
+        <th>Kolom 3</th>
+        <th>Kolom 4</th>
+        <th>Kolom 5</th>
+        
+        <?php
+        for ($i=1; $i <= 5; $i++){ 
+        echo "<tr>";
+                for ($j=1; $j <=5; $j++){
+                    echo "<td>Baris $i, Kolom $j <?=$j; ?></td>";
+                }
+        echo "</tr>";
+            }
+        ?>        
     </table>
 </body>
 </html>
