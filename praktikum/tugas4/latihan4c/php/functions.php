@@ -1,3 +1,12 @@
+<?php 
+/*
+Muhammad Fazril Fuady Hermawan
+203040068
+https://github.com/Fazril235/pw2021_203040068
+Pertemuan 4
+Jumat 10.00 - 11.00
+*/
+?>
 <?php
 // function untuk melakukan koneksi ke database dan memilih database
 function koneksi(){

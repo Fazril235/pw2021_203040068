@@ -1,8 +1,11 @@
-  
 <?php 
-// Muhammad Fazril Fuady. H
-// 203040068
-// Jumat 10.00 - 11.00
+/*
+Muhammad Fazril Fuady Hermawan
+203040068
+https://github.com/Fazril235/pw2021_203040068
+Pertemuan 4
+Jumat 10.00 - 11.00
+*/
 ?>
 <?php 
 // Menghubungkan dengan file php lainnya
@@ -38,7 +41,7 @@ $otomotif = query("SELECT * FROM otomotif");
                     <th>Gambar</th>
                     <th>Merk</th>
                     <th>Tipe Kendaraan</th>
-                    <th>Transmisi</th>
+                    <th>Price</th>
                     <th>Warna</th>
                 </tr>
             </thead>
@@ -50,7 +53,7 @@ $otomotif = query("SELECT * FROM otomotif");
                         <td><img src="assets/img/<?= $oto["img"]; ?>"></td>
                         <td><?= $oto["merk"]; ?></td>
                         <td><?= $oto["tipe"]; ?></td>
-                        <td><?= $oto["transmisi"]; ?></td>
+                        <td><?= $oto["harga"]; ?></td>
                         <td><?= $oto["warna"]; ?></td>
                         
                     </tr>

@@ -3,7 +3,7 @@
 Muhammad Fazril Fuady Hermawan
 203040068
 https://github.com/Fazril235/pw2021_203040068
-Pertemuan 4
+Pertemuan 5
 Jumat 10.00 - 11.00
 */
 ?>
@@ -21,7 +21,7 @@ $otomotif = query("SELECT * FROM otomotif");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=2.0">
-    <title>Ril-Otomotif</title>
+    <title>MotoRil</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bulma.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>

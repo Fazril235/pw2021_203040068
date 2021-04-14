@@ -3,7 +3,7 @@
 Muhammad Fazril Fuady Hermawan
 203040068
 https://github.com/Fazril235/pw2021_203040068
-Pertemuan 4
+Pertemuan 5
 Jumat 10.00 - 11.00
 */
 ?>
@@ -43,7 +43,7 @@ Jumat 10.00 - 11.00
         <p><?= $otomotif["harga"]; ?></p>
         <p><?= $otomotif["warna"]; ?></p>
     </div>
-    <button class="tombol-kembali"><a href="../index.php">Kembali</a></button>
+    <button class="tombol-kembali"><a href="../index.php">Back</a></button>
     </div>
 </body>
 </html>

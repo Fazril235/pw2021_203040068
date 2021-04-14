@@ -3,7 +3,7 @@
 Muhammad Fazril Fuady Hermawan
 203040068
 https://github.com/Fazril235/pw2021_203040068
-Pertemuan 4
+Pertemuan 5
 Jumat 10.00 - 11.00
 */
 ?>
@@ -11,7 +11,7 @@ Jumat 10.00 - 11.00
     // Mengecek apakah ada id yang dikirimkan dari index.php
     // Jika tidak ada makan akan di redirect ke halaman index.php
     if(!isset($_GET["id"])){
-        header("Location : ../index.php");
+        header("location : ../index.php");
         exit;
     }
 
@@ -26,24 +26,38 @@ Jumat 10.00 - 11.00
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MotoRil</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ril-Otomotif</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
     <div class="container">
         <div class="img">
             <img src="../assets/img/<?= $otomotif["img"]; ?>" alt="">
         </div>
+
     <div class="keterangan">
         <p><?= $otomotif["merk"]; ?></p>
         <p><?= $otomotif["tipe"]; ?></p>
         <p><?= $otomotif["harga"]; ?></p>
         <p><?= $otomotif["warna"]; ?></p>
     </div>
-    <button class="tombol-kembali"><a href="../index.php">Kembali</a></button>
+
+    <button class="tombol-kembali"><a href="../index.php">Back</a></button>
+    
     </div>
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
 </body>
 </html>

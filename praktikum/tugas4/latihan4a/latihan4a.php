@@ -1,4 +1,12 @@
-
+<?php 
+/*
+Muhammad Fazril Fuady Hermawan
+203040068
+https://github.com/Fazril235/pw2021_203040068
+Pertemuan 4
+Jumat 10.00 - 11.00
+*/
+?>
 <?php 
 // Membuat koneksi ke database
 $connect = mysqli_connect("localhost", "root", "");
@@ -26,7 +34,7 @@ $result = mysqli_query($connect, "SELECT * FROM otomotif");
                     <th>Gambar</th>
                     <th>Merk</th>
                     <th>Tipe Kendaraan</th>
-                    <th>Transmisi</th>
+                    <th>Price</th>
                     <th>Warna</th>
                    
                 </tr>
@@ -39,7 +47,7 @@ $result = mysqli_query($connect, "SELECT * FROM otomotif");
                         <td><img src="assets/img/<?= $row["img"]; ?>"></td>
                         <td><?= $row["merk"]; ?></td>
                         <td><?= $row["tipe"]; ?></td>
-                        <td><?= $row["transmisi"]; ?></td>
+                        <td><?= $row["harga"]; ?></td>
                         <td><?= $row["warna"]; ?></td>
                 
                     </tr>
