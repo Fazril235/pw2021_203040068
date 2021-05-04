@@ -3,10 +3,17 @@
 Muhammad Fazril
 203040068
 https://github.csom/Fazril235/pw2021_203040068
-Pertemuan 11
+Pertemuan 12
 */
 ?>
 <?php
+session_start();
+
+if(!isset($_SESSION['login'])) {
+  header("Location: login.php");
+  exit;
+}
+
 require 'functions.php';
 $mahasiswa = query("SELECT * FROM mahasiswa");
 
@@ -28,6 +35,7 @@ if (isset($_POST['cari'])) {
 </head>
 
 <body>
+  <a href="logout.php">Logout</a>
   <h3>Daftar Mahasiswa</h3>
 
   <a href="tambah.php">Tambah Data Mahasiswa</a>

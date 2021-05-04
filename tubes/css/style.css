@@ -1,0 +1,72 @@
+.body {
+  background-color: #555;
+}
+.navbar-fixed {
+  position: absolute;
+  z-index: 999999999;
+}
+.navbar-fixed img {
+  padding-top: 10px;
+  margin-top: 50px;
+  padding left: 30px;
+}
+@font-face {
+  font-family: "Dayblack";
+  src: url("dayblack.ttf") format("truetype");
+}
+
+.slider h3,
+.slider h5,
+.clients h3 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.slider img {
+  opacity: 0, 5;
+}
+
+.nav-wrapper a {
+  padding-right: 30px;
+  padding-top: 20px;
+}
+
+/* <div class="container">
+<table class="max">
+    <thead>
+        <tr class="grey darken-4 white-text">
+            <th>No</th>
+            <th>Picture</th>
+            <th>Brand</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Color</th>
+            <th>More</th>
+            <th><a href="php/login.php">admin
+            </a></th>
+        </tr>
+    </thead>
+<tbody>
+    <?php $i = 1; ?>
+    <?php foreach($otomotif as $oto) : ?>
+        
+        <tr class="black-text">
+        <tr>
+            <td><?= $i; ?></td>
+            <td>
+                <img src="assets/img/<?= $oto["img"]; ?>">
+            </td>
+            <td><?= $oto["merk"]; ?></td>
+            <td><?= $oto["tipe"]; ?></td>
+            <td><?= $oto["harga"]; ?></td>
+            <td><?= $oto["warna"]; ?></td>
+            <td>
+                <a href="php/detail.php?id=<?= $oto['id']?>"<?= $oto["merk"]?>><i class="material-icons">add_to_photos</i></a>
+            </td>
+            <td></td>
+        </tr>
+        </tr>
+        <?php $i++; ?>
+    <?php endforeach; ?>
+</tbody>
+</div>
+ */

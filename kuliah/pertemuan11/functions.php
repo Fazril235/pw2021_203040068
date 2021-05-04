@@ -3,7 +3,7 @@
 Muhammad Fazril
 203040068
 https://github.csom/Fazril235/pw2021_203040068
-Pertemuan 10
+Pertemuan 11
 */
 ?>
 <?php
@@ -19,6 +19,10 @@ function query($query)
 
   $result = mysqli_query($conn, $query);
 
+  // jika hasilnya hanya 1 data
+  if (mysqli_num_rows($result) == 1) {
+    return mysqli_fetch_assoc($result);
+  }
 
 
   $rows = [];
@@ -44,7 +48,8 @@ function tambah($data)
             VALUES
             (null, '$nama', '$nrp', '$email', '$jurusan', '$gambar');
             ";
-  mysqli_query($conn, $query) or die(mysqli_error($conn));
+  mysqli_query($conn, $query);
+  echo mysqli_error($conn);
   return mysqli_affected_rows($conn);
 }
 
