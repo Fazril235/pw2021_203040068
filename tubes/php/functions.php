@@ -3,7 +3,6 @@
 Muhammad Fazril Fuady Hermawan
 203040068
 https://github.com/Fazril235/pw2021_203040068
-Pertemuan 6
 Jumat 10.00 - 11.00
 */
 ?>
@@ -51,7 +50,9 @@ function tambah($data)
 
 function upload() {
 
+
     $namaFile = $_FILES['img']['name'];
+    $ukuranFile = $_FILES['img']['type'];
     $ukuranFile = $_FILES['img']['size'];
     $error = $_FILES['img']['error'];
     $tmpName = $_FILES['img']['tmp_name'];
@@ -64,8 +65,46 @@ function upload() {
 
         return false;
     }
-    // 
+
+    // cek ekstensi file
+  $daftar_gambar = ['jpg', 'jpeg', 'png'];
+  $ekstensi_file = explode('.', $nama_file);
+  $ekstensi_file = strtolower(end($ekstensi_file));
+  if(!in_array($ekstensi_file, $daftar_gambar)) {
+    echo "<script>
+            alert('yang anda pilih bukan gambar!');
+          </script>";
+      return false;
+  }
+
+  // cek type file
+  if($tipe_file != 'image/jpeg' && $tipe_file != 'image/png') {
+    echo "<script>
+            alert('yang anda pilih bukan gambar!');
+          </script>";
+      return false;
+  }
+
+  // cek ukuran file
+  // maksimal 5Mb = 5000000
+  if($ukuran_file > 5000000) {
+    echo "<script>
+            alert('ukuran terlalu besar!');
+          </script>";
+      return false;    
+  }
+
+  // lolos pengecekan
+  // siap upload file
+  // generate nama file baru
+  $nama_file_baru = uniqid();
+  $nama_file_baru .= '.';
+  $nama_file_baru .= $ekstensi_file;
+  move_uploaded_file($tmp_file, 'img/' . $nama_file_baru);
+
+  return $nama_file_baru;
 }
+
 
 function hapus($id)
 {

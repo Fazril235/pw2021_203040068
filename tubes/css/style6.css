@@ -1,0 +1,27 @@
+.nav-wrapper img {
+  padding-left: 60px;
+  margin-top: -32px;
+  height: 140px;
+  width: 200px;
+}
+.nav-wrapper li {
+  margin-right: 40px;
+}
+.slider img {
+  filter: blur(7px);
+  opacity: 0, 1 !important;
+}
+body {
+  background-color: maroon;
+}
+.caption center,
+h3,
+h5,
+h6 {
+  color: black;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-style: "sea";
+}
+.kolom {
+  color: wheat;
+}

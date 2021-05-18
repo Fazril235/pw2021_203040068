@@ -1,0 +1,82 @@
+.body {
+  background-color: #555;
+}
+.navbar-fixed {
+  position: absolute;
+  z-index: 999999999;
+}
+
+@font-face {
+  font-family: "sea";
+  src: url("../font/SEASRN__.ttf") format("truetype");
+}
+
+.slider h3,
+.slider h5,
+.footer h5,
+.nav-wrapper a,
+.owner h3 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-style: "sea";
+}
+
+.title {
+  font-weight: bold;
+}
+
+.parallax-container {
+  height: 340px;
+}
+
+.parallax img {
+  height: 600px;
+  filter: grayscale(4);
+  opacity: 1 !important;
+}
+
+.slider img {
+  filter: grayscale(1);
+  opacity: 1 !important;
+}
+
+section,
+footer {
+  padding: 20px 0;
+}
+.nav-wrapper img {
+  padding-left: 60px;
+  margin-top: -35px;
+  height: 160px;
+  width: 200px;
+}
+.photo img {
+  border-radius: 85%;
+  height: 130px;
+  width: 200px;
+  position: relative;
+}
+.photo .container {
+  margin: auto;
+  padding-left: 370px;
+  position: relative;
+}
+.photo .btn {
+  margin-left: 520px;
+  font-weight: 22px;
+  background-color: lightgray;
+  color: black;
+  border-radius: 50px;
+}
+.nav-wrapper a {
+  padding-right: 30px;
+  padding-top: 5px;
+}
+.card-action a {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.footer h5 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.portfolio {
+  background-color: blueviolet;
+}

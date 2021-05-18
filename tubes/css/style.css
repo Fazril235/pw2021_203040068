@@ -5,11 +5,7 @@
   position: absolute;
   z-index: 999999999;
 }
-.navbar-fixed img {
-  padding-top: 10px;
-  margin-top: 50px;
-  padding left: 30px;
-}
+
 @font-face {
   font-family: "Dayblack";
   src: url("dayblack.ttf") format("truetype");
@@ -21,15 +17,49 @@
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+.title {
+  font-weight: bold;
+}
+
+.parallax-container {
+  height: 700px;
+}
+
+.parallax img {
+  filter: grayscale(1);
+  opacity: 0, 2 !important;
+  height: 700px;
+}
+
 .slider img {
-  opacity: 0, 5;
+  filter: grayscale(1);
+  opacity: 1 !important;
+}
+
+.clients img {
+  max-width: 700px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.8));
+}
+
+section,
+footer {
+  padding: 20px 0;
+}
+.nav-wrapper img {
+  padding-left: 90px;
+  padding-bottom: 50px;
 }
 
 .nav-wrapper a {
   padding-right: 30px;
   padding-top: 20px;
 }
-
+.card-action a {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.footer p {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
 /* <div class="container">
 <table class="max">
     <thead>

@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(../assets/img/bg4.jpg);
+  background-size: cover;
+  backdrop-filter: blur(4px);
+
+  color: wheat;
+}
+.container {
+  color: wheat;
+}
+.container h1 {
+  text-align: center;
+}

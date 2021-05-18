@@ -66,6 +66,8 @@ if (isset($_POST['submit'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="../css/style2.css" class="href">
 </head>
 <body>
@@ -90,6 +92,7 @@ if (isset($_POST['submit'])) {
         <input type="submit" name="submit" value="Login "class="btn"></input>
     </form>    
         <h4>Dont have an account ?  <a href="registrasi.php">Sign up</a></h4>
+        <h4><a href="../index.php">Back</a></h4>
 </div>
 </form>
     

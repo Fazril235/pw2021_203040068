@@ -26,20 +26,32 @@ require 'functions.php';
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Tambah Data</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma-rtl.min.css">
-</head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="../css/style5.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!-- Favicon-->
+   <link rel="icon" type="image/x-icon" href="../tubes/assets/img/logo1.png" />
+    
+    <title>Add Data</title>
+  </head>
 <body>
-    <h1>Form Add Data</h1><br>
+    <div class="container">
+<div class="container">
+    <h3>Form Add Data</h3><br>
     <form action="" method="post" enctype="multipart/form-data">
         <ul>
             <li>
+         
             <form class="box">
                 <div class="field">
                  <label for="img">Picture :</label><br>
                      <div class="control">
-                 <input type="file" name="img" id="img" required>
+                 <input type="file" name="img" class="img" id="img" onchange="previewImage()">
               </div>
             </div>
             
@@ -51,28 +63,34 @@ require 'functions.php';
             </div>
 
                 <div class="field">
-                    <label for="merk">Type :</label><br>
+                    <label for="tipe">Type :</label><br>
                     <div class="control">
                     <input class="text" name="tipe" id="tipe" required>
                 </div>
             </div>
 
                 <div class="field">
-                    <label for="merk">Price :</label><br>
+                    <label for="harga">Price :</label><br>
                     <div class="control">
                     <input class="text" name="harga" id="harga" required>
                 </div>
             </div>
+            
                 <div class="field">
-                    <label for="merk">Color :</label><br>
+                    <label for="warna">Color :</label><br>
                     <div class="control">
                     <input class="text" name="warna" id="warna" required>
                 </div>
             </div>
+         
 
             <button type="submit" name="tambah">Add Data!</button>
-           
+            <button><a href="admin.php">Back</a></button>
     </form>
         </ul>
+        </div>
+        </div>
+
+        <script src="../js/script.js"></script> 
 </body>
 </html>
