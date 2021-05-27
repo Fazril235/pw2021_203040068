@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 12, 2021 at 10:48 AM
+-- Generation Time: May 27, 2021 at 10:04 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -32,7 +32,7 @@ CREATE TABLE `otomotif` (
   `img` varchar(50) NOT NULL,
   `merk` varchar(15) NOT NULL,
   `tipe` varchar(15) NOT NULL,
-  `transmisi` varchar(10) NOT NULL,
+  `harga` varchar(20) NOT NULL,
   `warna` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -40,17 +40,40 @@ CREATE TABLE `otomotif` (
 -- Dumping data for table `otomotif`
 --
 
-INSERT INTO `otomotif` (`id`, `img`, `merk`, `tipe`, `transmisi`, `warna`) VALUES
-(1, '11.1.jpg', 'BMW', 'r nine t', 'Clutch', 'Black'),
-(2, 'motor1.1.jpg', 'Kawasaki', 'H2R', 'Clutch', 'Black'),
-(3, 'motor2.1.jpg', 'Ducati', 'Panigale', 'Clutch', 'Red'),
-(4, 'motor3.1.jpg', 'BMW', 'HP4 Race', 'Clutch', 'Black'),
-(5, 'motor4.jpg', 'Harley-Davidson', 'CVO Limited', 'Clutch', 'Black'),
-(6, '6.1.jpg', 'Triumph', 'Rocket 3 GT', 'Clutch', 'Black'),
-(7, '7.1.jpg', 'BMW', 'R18 Classic Tou', 'Clutch', 'Black'),
-(8, '8.1.jpg', 'Honda', 'CBR1000RR-R Fir', 'Clutch', 'Red'),
-(9, '9.1.jpg', 'Benelli', 'TNT 1130 Cafe R', 'Clutch', 'Yellow'),
-(10, '10.1.jpg', 'Moto Guzzi', 'Audace ', 'Clutch', 'Black');
+INSERT INTO `otomotif` (`id`, `img`, `merk`, `tipe`, `harga`, `warna`) VALUES
+(1, 'moto1.png', 'BMW', 'r nine t', 'Rp. 644.000.000,00', 'Black'),
+(2, 'moto1.2.png', 'Kawasaki', 'H2R', 'Rp. 820.000.000,00', 'Black'),
+(3, 'moto1.3.png', 'Ducati', 'Panigale', 'Rp. 799.000.000,00', 'Red'),
+(4, 'moto1.4.png', 'BMW', 'HP4 Race', 'Rp. 1.500.000.000,00', 'Black'),
+(5, 'moto1.5.png', 'Harley-Davidson', 'CVO Limited', 'Rp. 2.117.000.000,00', 'Black'),
+(6, 'moto1.6.png', 'Triumph', 'Rocket 3 GT', 'Rp. 750.000.000,00', 'Black'),
+(7, 'moto1.7.png', 'BMW', 'R18 Classic Tou', 'Rp. 1.069.000.000,00', 'Black'),
+(8, 'moto1.8.png', 'Honda', 'CBR1000RR-R', 'Rp. 990.000.000,00', 'Red'),
+(9, 'moto1.9.png', 'Benelli', 'TNT 1130 Cafe R', 'Rp. 310.000.000,00', 'Yellow'),
+(10, 'moto1.10.png', 'Moto Guzzi', 'Audace ', 'Rp. 765.000.000,00', 'Black'),
+(16, 'moto1.11.png', 'Motto Guzzi', 'V7 II Racer', 'Rp. 480.000.000,00', 'Silver'),
+(17, 'moto1.12.png', 'Ducati', 'Monster', 'Rp. 500.000.000,00', 'Red');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(64) NOT NULL,
+  `password` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`) VALUES
+(2, '', '$2y$10$XoVuc1rvurAvcRtFugGFUu22Wg67QkuMM/lAhyzIAZLCRyz2EIFB6'),
+(3, 'admin', '$2y$10$f0IH0eYS9fmuoPf9N.620OHcjNOWc4bkpsUPjIzArTOmfrpGPnkZa'),
+(4, 'fazrilfh', '$2y$10$fnH0d5e7MXXzePeBkvv8k.6geyw/UHRPQ7YcLlZQg7RaHJyLKw.Jm');
 
 --
 -- Indexes for dumped tables
@@ -63,6 +86,12 @@ ALTER TABLE `otomotif`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -70,7 +99,13 @@ ALTER TABLE `otomotif`
 -- AUTO_INCREMENT for table `otomotif`
 --
 ALTER TABLE `otomotif`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
