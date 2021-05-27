@@ -128,8 +128,8 @@ if( isset($_POST["cari"]) ) {
  
 <form action="" method="post">
 <input type="text" name="keyword" autofocus
-placeholder="find your bike.." autocomplete="off">
-<button type="submit" name="cari">search</button>
+placeholder="find your bike.." autocomplete="off" autofocus class="keyword">
+<button type="submit" name="cari" class="tombol-cari">search</button>
 <br><br><br><br>
 </form>
 
@@ -248,6 +248,7 @@ placeholder="find your bike.." autocomplete="off">
 
 
     </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
       

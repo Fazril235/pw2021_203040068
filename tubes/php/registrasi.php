@@ -3,8 +3,7 @@
 Muhammad Fazril Fuady Hermawan
 203040068
 https://github.com/Fazril235/pw2021_203040068
-Pertemuan 6
-Jumat 10.00 - 11.00
+tubes
 */
 ?>
 <?php
@@ -47,6 +46,7 @@ if (isset($_POST["register"])) {
         <input type="password" name="password">
          
         <input type="submit" name="register" value="Register "class="btn"></input>
+        <h4>Do you have account ?  <a href="login.php">Login!!</a></h4>
     </form> 
 </div>
     </form>
